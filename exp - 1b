@@ -1,0 +1,27 @@
+// Simple Dart Program to understand basics
+void main() {
+  // Variables
+  String name = "Snikitha";
+  int age = 21;
+  double marks = 89.5;
+  bool isStudent = true;
+
+  // Printing values
+  print("Hello, my name is $name");
+  print("I am $age years old");
+  print("My marks: $marks");
+  print("Am I a student? $isStudent");
+
+  // Conditional statement
+  if (marks > 50) {
+    print("Result: Passed ✅");
+  } else {
+    print("Result: Failed ❌");
+  }
+
+  // Loop
+  print("Numbers from 1 to 5:");
+  for (int i = 1; i <= 5; i++) {
+    print(i);
+  }
+}
