@@ -1,0 +1,64 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // Get screen width
+    double screenWidth = MediaQuery.of(context).size.width;
+
+    // Decide layout based on screen width
+    if (screenWidth < 600) {
+      // Mobile layout
+      return Scaffold(
+        appBar: AppBar(title: Text('Mobile Layout')),
+        body: Center(
+          child: Container(
+            width: 200,
+            height: 100,
+            color: Colors.blue,
+            child: Center(child: Text('Mobile', style: TextStyle(color: Colors.white))),
+          ),
+        ),
+      );
+    } else if (screenWidth < 1200) {
+      // Tablet layout
+      return Scaffold(
+        appBar: AppBar(title: Text('Tablet Layout')),
+        body: Center(
+          child: Container(
+            width: 400,
+            height: 200,
+            color: Colors.green,
+            child: Center(child: Text('Tablet', style: TextStyle(color: Colors.white))),
+          ),
+        ),
+      );
+    } else {
+      // Desktop layout
+      return Scaffold(
+        appBar: AppBar(title: Text('Desktop Layout')),
+        body: Center(
+          child: Container(
+            width: 600,
+            height: 300,
+            color: Colors.orange,
+            child: Center(child: Text('Desktop', style: TextStyle(color: Colors.white))),
+          ),
+        ),
+      );
+    }
+  }
+}
