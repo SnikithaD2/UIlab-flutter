@@ -1,0 +1,40 @@
+🚀 Steps to Install Flutter & Dart SDK
+1. Download Flutter SDK
+
+Go to: flutter.dev → Get started
+
+Choose OS (Windows / macOS / Linux).
+
+Download Flutter SDK zip and extract to C:\src\flutter (Windows) or /Users/yourname/flutter (Mac/Linux).
+
+2. Set Environment Path
+
+Add flutter\bin to PATH.
+
+On Windows → Edit Environment Variables.
+
+On Mac/Linux → Add in .bashrc or .zshrc:
+
+export PATH="$PATH:`pwd`/flutter/bin"
+
+3. Install Dart SDK
+
+Dart comes with Flutter ✅ (no need separate install).
+
+But if required: download from dart.dev
+ and add dart-sdk/bin to PATH.
+
+4. Check Installation
+
+Run in terminal:
+
+flutter doctor
+
+
+It shows if Android Studio, VS Code, or device setup is missing.
+
+5. Install Editor (Optional)
+
+VS Code (with Flutter + Dart plugins)
+
+Or Android Studio (full IDE).
