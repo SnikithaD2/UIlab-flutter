@@ -5,11 +5,11 @@ class MainApp extends StatelessWidget {
   @override 
   Widget build(BuildContext context) { 
     return MaterialApp( 
-      title: '2305e3', 
+      title: '2305d2', 
       debugShowCheckedModeBanner: false, // Removes debug banner 
       home: Scaffold( 
         appBar: AppBar( 
-          title: const Text('2305e3'), // Output window heading 
+          title: const Text('2305d2'), // Output window heading 
         ), 
         body: Center( 
           child: Column( 
